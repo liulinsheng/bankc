@@ -180,7 +180,7 @@ List MakeEmpty(List L)//空链表创建函数
 	{
 		printf("创建失败,内存不足!!!");        //创建失败，提示内存不足
 		char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");                       //暂停屏幕显示
 		return NULL;                           //返回上一级菜单
 	}
@@ -196,7 +196,7 @@ List1 MakeEmpty1(List1 L)
 	{
 		printf("创建失败,内存不足!!!");                  //创建失败，提示内存不足
 		char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");                                 //暂停屏幕显示
 		return NULL;                                     //返回上一级菜单
 	}
@@ -219,7 +219,7 @@ void TravelList(List L)//遍历链表函数
 	}
 	printf("- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -- - - - -\n");
 	//char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 	printf("请按回车键继续...");
 	fegts(buf,1024,stdin);
@@ -241,7 +241,7 @@ void TravelList1(List1 L)
 	}
 	printf("- - - - - - - - - - - - - - - - - - - - - - - - - - -  - - - - - - - - - - -\n");
 	char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 }
 
@@ -261,7 +261,7 @@ List Load(List L)//初始化函数
 		{
 			printf("\t\t文件创建失败!!!\n");
 			char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");                                //暂停屏幕显示
 			return NULL;
 		}
@@ -275,7 +275,7 @@ List Load(List L)//初始化函数
 		{
 			printf("\n\t\t文件信息读取失败，系统内存不足！");
 			char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");                                 //暂停屏幕显示
 			return NULL;
 		}
@@ -304,7 +304,7 @@ List1 Load1(List1 L)
 		{
 			printf("\t\t文件创建失败!!!\n");
 			char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 			return NULL;                                //暂停屏幕显示
 		}
@@ -318,7 +318,7 @@ List1 Load1(List1 L)
 		{
 			printf("\n\t\t文件信息读取失败，系统内存不足！");
 			char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");                                 //暂停屏幕显示
 			return NULL;
 		}
@@ -340,7 +340,7 @@ void Save(List L)//信息保存函数
 	{
 		printf("打开文件失败\n");
 		char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 		return;
 	}
@@ -523,7 +523,7 @@ void MainMeun2(char num[], List L, List1 L1)//客户主菜单
 		{
 			printf("\n无操作记录： ");
 			char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 			return;
 		}
@@ -670,7 +670,7 @@ void ModMeun(List L, List1 L1)//修改菜单
 					{
 						printf("未找到您想要修改的账号~\n");
 						char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear"); printf("\033c");  ModMeun(L, L1);
 					}
 				}
@@ -679,7 +679,7 @@ void ModMeun(List L, List1 L1)//修改菜单
 				{
 					printf("\n该账号不存在： ");
 					char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear"); printf("\033c");  ModMeun(L, L1);
 				}
 			}
@@ -736,7 +736,7 @@ void Add(List L)//客户信息
 	{
 		printf("\n该账号已创建\n");
 		char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 		return;
 		
@@ -746,7 +746,7 @@ void Add(List L)//客户信息
 	{
 		printf("\n添加失败,内存不足!!!\n\n");                    //添加失败，提示内存不足
 		char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");                                         //暂停屏幕显示
 		return;                                                  //返回上一级菜单
 	}
@@ -774,7 +774,7 @@ scanf("%d", &t);
 	L->next = p;
 	Save(L);                                                     //调用 信息保存函数
 	char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 	return;
 }
@@ -787,7 +787,7 @@ void Add1(char sj[], Position p, List L, List1 L1)//收支记录
 	{
 		printf("\n添加失败,内存不足!!!\n\n");                    //添加失败，提示内存不足
 		char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");                                         //暂停屏幕显示
 	}
 	strcpy(p1->num, p->num);
@@ -802,7 +802,7 @@ void Add1(char sj[], Position p, List L, List1 L1)//收支记录
 		{
 			printf("\n余额不足！");
 			char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear"); return;
 		}
 		p->money = p->money + p1->rmb;
@@ -817,14 +817,14 @@ void Add1(char sj[], Position p, List L, List1 L1)//收支记录
 			{
 				printf("\n您本月还可以消费%.2lf元", 5000 + p->money+p1->rmb);
 			//	char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear"); return;
 			}
 			else if (p->point==-1)
 			{
 				printf("\n您的信用分不够，请先还款哦！您需要还款%.2lf元。", p->money);
 		//		char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear"); return;
 			}
 			
@@ -832,13 +832,13 @@ void Add1(char sj[], Position p, List L, List1 L1)//收支记录
 				printf("\n");
 				printf("您的消费达到本月的最大消费额度，本月已无法再消费，若需要再次消费，请及时还款\n"); 
 				char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear"); return; 
 			}
 			else if(p->money+p1->rmb<-5000){
 				printf("您本月最多还可以消费%.2lf元",5000+p->money);
 				char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear"); return;
 			}
 			if (p->money+p1->rmb<0 && p->point == 0)
@@ -879,7 +879,7 @@ void Add1(char sj[], Position p, List L, List1 L1)//收支记录
 	Save1(L1);                                                     //调用 信息保存函数
 	Save(L);
 	char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 	return;
 }
@@ -899,7 +899,7 @@ void Delete(List L, List1 L1)//客户信息
 	{
 		printf("\n不存在该账户哦~\n");
 		char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear"); return;
 	}
 	PrintClient(p);      //调用职工信息打印函数
@@ -908,7 +908,7 @@ void Delete(List L, List1 L1)//客户信息
 	{
 		printf("\n请先取出账户余额！");
 		char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 		return;
 	}
@@ -916,7 +916,7 @@ void Delete(List L, List1 L1)//客户信息
 	{
 		printf("\n请先还款！");
 		char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 		return;
 	}
@@ -958,7 +958,7 @@ void Delete(List L, List1 L1)//客户信息
 		Save1(L1);
 	}
 	char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 }
 //查询函数
@@ -978,7 +978,7 @@ void ViewNum(char num[], List L)//账号
 	if (f == 0)             //判断是否存在该客户
 		printf("\n没有匹配的信息");
 		char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 }
 void ViewName(char name[], List L)//姓名
@@ -997,7 +997,7 @@ void ViewName(char name[], List L)//姓名
 	if (f == 0)             //判断是否存在该客户
 		printf("\n没有匹配的信息");
 	char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 }
 void ViewTel(char tel[], List L)//电话
@@ -1016,7 +1016,7 @@ void ViewTel(char tel[], List L)//电话
 	if (f == 0)             //判断是否存在该客户
 		printf("\n没有匹配的信息");
 	char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 }
 void ViewID(char ID[], List L)//身份证号
@@ -1036,7 +1036,7 @@ void ViewID(char ID[], List L)//身份证号
 		printf("\n没有匹配的信息");
 	
 char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 }
 void ViewCom(List L)//综合查询
@@ -1060,7 +1060,7 @@ void ViewCom(List L)//综合查询
 	if (f == 0)             //判断是否存在该客户
 		printf("\n没有匹配的信息");
 	char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 }
 //收支记录查询
@@ -1080,7 +1080,7 @@ void ViewName1(char name[], List1 L)//按姓名查询
 	if (f == 0)              //判断是否存在该客户
 		printf("\n没有匹配的信息");
 	char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 }
 void ViewNum1(char num[], List1 L)//按账号查询
@@ -1099,7 +1099,7 @@ void ViewNum1(char num[], List1 L)//按账号查询
 	if (f == 0)
 		printf("\n没有匹配的信息");
 	char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 }
 void ViewCom1(List1 L)//综合查询
@@ -1123,7 +1123,7 @@ void ViewCom1(List1 L)//综合查询
 	if (f == 0)             //判断是否存在该客户
 		printf("\n没有匹配的信息");
 	char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 }
 //排序函数(升序
@@ -1276,7 +1276,7 @@ void CircleName(char name[], Position p, List L, List1 L1)//姓名
 		{
 			printf("\n该账号不存在： ");
 			char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 		}
 	}
@@ -1305,7 +1305,7 @@ void CircleID(char ID[], Position p, List L, List1 L1)//身份证
 		{
 			printf("\n该账号不存在： ");
 			char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 		}
 	}
@@ -1334,7 +1334,7 @@ void CircleTel(char tel[], Position p, List L, List1 L1)//电话
 		{
 			printf("\n该账号不存在： ");
 			char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 		}
 	}
@@ -1367,7 +1367,7 @@ void ModName(Position p, List L, List1 L1)//姓名
 		p1 = p1->next;
 	}
 	char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 }
 void ModTel(Position p, List L)//电话
@@ -1378,7 +1378,7 @@ void ModTel(Position p, List L)//电话
 	strcpy(p->tel, tel);
 	Save(L);         //调用信息保存函数
 	char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 }
 void ModPassword(Position p, List L)//密码
@@ -1389,7 +1389,7 @@ void ModPassword(Position p, List L)//密码
 	strcpy(p->password, a);
 	Save(L);
 	char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 }
 
@@ -1408,7 +1408,7 @@ Position Logon(List L)//登录函数
 	{
 		printf("\n\t\t该账号不存在！");
 		char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 		return NULL;
 	}
@@ -1416,7 +1416,7 @@ Position Logon(List L)//登录函数
 	{
 		printf("\n\t\t该账号已被锁定，请到柜台解锁！");
 		char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 		return NULL;
 	}
@@ -1424,7 +1424,7 @@ Position Logon(List L)//登录函数
 	{
 		printf("\n\t\t该账号以被挂失，请到柜台取消挂失！");
 		char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear");
 		return NULL;
 	}
@@ -1437,8 +1437,8 @@ Position Logon(List L)//登录函数
 	{
 		printf("\n\t\t该账号已被锁定，请到柜台解锁！\n");
 		strcpy(p->sd, b); Save(L);
-		//char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		char buf[1024]={0};
+		fgets(buf,1024,stdin);
 	system("clear");
 		//pause();
 		return NULL;
@@ -1533,14 +1533,14 @@ void jiesuo(List L, List1 L1)
 			{
 				printf("\n\t\t该账号不存在");
 				char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);;
 	system("clear"); return;
 			}
 			else if (strcmp(p->sd, a) == 0)
 			{
 				printf("\n\t\t该账号未被锁定");
 				char buf[1024]={0};
-		fgets(buf,1024,stdin)
+		fgets(buf,1024,stdin);
 	system("clear"); return;
 			}
 			printf("\n\t\t请输入您的身份证号： ");//确认身份信息
@@ -1567,19 +1567,25 @@ void jiesuo(List L, List1 L1)
 			if (!p)
 			{
 				printf("\n\t\t该账号不存在");
-				system("pause"); return;
+				char buf[1024]={0};
+		fgets(buf,1024,stdin);
+	system("clear"); return;
 			}
 			else if (strcmp(p->sd, c) == 0)
 			{
 				printf("\n\t\t该账号已挂失");
-				system("pause"); return;
+				char buf[1024]={0};
+		fgets(buf,1024,stdin);
+	system("clear"); return;
 			}
 			printf("\n\t\t请输入您的身份证号： ");//确认身份信息
 			fgets(ID,sizeof(ID),stdin);
 			if (strcmp(ID, p->ID) != 0)
 			{
 				printf("\n\t\t身份证输入有误！");
-				system("pause"); return;
+				char buf[1024]={0};
+		fgets(buf,1024,stdin);
+	system("clear"); return;
 			}
 			Mimayincan(p->password);
 			strcpy(p->sd, c); Save(L);
@@ -1593,7 +1599,9 @@ void jiesuo(List L, List1 L1)
 				p1 = p1->next;
 			}
 			printf("\t\t该账号完成挂失\n");
-			system("pause");MainMeun1(L, L1); break;
+			char buf[1024]={0};
+		fgets(buf,1024,stdin);
+	system("clear");MainMeun1(L, L1); break;
 		case 3:  printf("\n\t\t请输入您需要取消挂失的账号：");
 			fgets(num,sizeof(num),stdin);
 			while (p != NULL && strcmp(num, p->num) != 0)
@@ -1601,19 +1609,25 @@ void jiesuo(List L, List1 L1)
 			if (!p)
 			{
 				printf("\n\t\t该账号不存在");
-				system("pause"); return;
+				char buf[1024]={0};
+		fgets(buf,1024,stdin);
+	system("clear"); return;
 			}
 			else if (strcmp(p->sd, a) == 0)
 			{
 				printf("\n\t\t该账号未挂失");
-				system("pause"); return;
+				char buf[1024]={0};
+		fgets(buf,1024,stdin);
+	system("clear"); return;
 			}
 			printf("\n\t\t请输入您的身份证号： ");//确认身份信息
 			fgets(ID,sizeof(ID),stdin);
 			if (strcmp(ID, p->ID) != 0)
 			{
 				printf("\n\t\t身份证输入有误！");
-				system("pause"); return;
+				char buf[1024]={0};
+		fgets(buf,1024,stdin);
+	system("clear"); return;
 			}
 			Mimayincan(p->password);
 			strcpy(p->sd, a); Save(L);
@@ -1627,11 +1641,14 @@ void jiesuo(List L, List1 L1)
 				p1 = p1->next;
 			}
 			printf("\t\t该账号完成取消挂失\n");
-			system("pause");
+			char buf[1024]={0};
+		fgets(buf,1024,stdin);
+	system("clear");
 			MainMeun1(L, L1); break;
 		case 0: MainMeun1(L, L1); break;//返回上一层
 		}
 	}
 }
 //**
+
 
